@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #333;
+    float: inherit;
+  }
+
+  li,
+  ul#navigation ul li ul li {
+    float: right;
+  }
+
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: #333;
+  }
+
+  li a:hover {
+    background-color: #f3be3b;
+  }
+
+  .active {
+    background-color: #f3be3b;
+  }
+
+  ul#navigation li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  ul#navigation ul,
+  ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    width: 9rem;
+    background: #333;
+    box-shadow: 1px 1px 1px #333;
+  }
+
+  ul#navigation ul li {
+    width: 100%;
+    border: 0 none;
+    border-bottom: 1px solid #c9c9c9;
+    float: inherit;
+  }
+
+  .last {
+    padding-right: 40px;
+  }
+
+  ul#navigation ul li a {
+    flex-direction: column;
+    background: none;
+    padding: 7px 14px;
+    color: white;
+    text-decoration: none;
+    border: 0 none;
+    width: 9rem;
+    float: inherit;
+  }
+
+  ul#navigation ul li a:hover {
+    background: #f3be3b;
+  }
+
+  .menu-item {
+    position: relative;
+    padding-right: 30px;
+    margin-right: inherit;
+  }
+  .menu-item ul {
+    position: absolute;
+    top: 50px;
+    left: 1px;
+    width: 140px;
+  }
+
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+@media screen and (max-width: 650px) {
+.nav {
+  position: relative;
+}
+
+    .nav ul li {
+      width: 100%;
+    }
+
+    ul {
+      text-align: center;
+      width: 100%;
+    }
+
+    .menu-item {
+      color: white;
+      padding: 0;
+      text-decoration: none;
+      background-color: #333;
+      width: 100%;
+    }
+    ul#navigation ul {
+      display: none;
+    }
+
+    ul#navigation ul li a {
+      width: 100%;
+      float: inherit;
+    }
+
+    a {
+      width: 100%;
+    }
+  }

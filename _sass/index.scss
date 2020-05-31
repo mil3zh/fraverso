@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+/*----------------------------
+Body
+----------------------------*/
+
+
+.body-background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: left center;
+  align-items: center;
+  text-align: left;
+  background-image: url("img/nebula.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.headings {
+  position: relative;
+  top:-5%;
+  left: 10%;
+  width: 100%;
+}
+
+.by-line {
+  width: fit-content;
+  margin-bottom: 0%;
+  margin-left: 1%;
+  color: #137e5a;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  white-space: nowrap;
+  z-index: 50;
+}
+
+h3 span{
+  display: inline;
+}
+
+#heading1 {
+  margin-left: 1%;
+  -webkit-text-stroke: 3px white;
+  color: white;
+  text-shadow: 3px 3px 4px #1ac762;
+  font-size: 8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+#heading2 {
+  font-size: 6rem;
+  margin-top: -1%;
+  margin-bottom: 0;
+  margin-left: 18%;
+  text-decoration: none;
+  text-align: left;
+  -webkit-text-stroke: 3px white;
+  color: white;
+  text-shadow: 3px 3px 4px #1ac762;
+}
+
+.ff:after{
+  content: url(img/alien.png);
+  position: absolute;
+  transform: scale(0.088) rotate(15deg);
+  transition: scale() 0.2s;
+  padding: 15px;
+  left: 20%;
+  top: -2%;
+  animation: 3s ease 0.5s infinite wave;
+  z-index: 100;
+}
+
+@keyframes wave{
+  0% { transform: scale(0.088) rotate(15deg); }
+  50% { transform: scale(0.088) rotate(30deg); }
+  100% { transform: scale(0.088) rotate(15deg); }
+}
+
+.ff:hover:after{
+  transform: scale(0.089) rotate(15deg);
+  animation: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .by-line {
+    font-size: 1.2rem; /*1.5*/
+  }
+
+  #heading1 {
+    font-size: 7.2rem; /*8*/
+  }
+  #heading2 {
+    font-size: 5.2rem; /*6*/
+  }
+
+  .ff:after{
+  left: 16%;
+  top: -2%;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .headings{
+    top: -30%;
+  }
+
+  .by-line {
+    font-size: 1rem; /*1.5*/
+  }
+
+  #heading1 {
+    font-size: 6.2rem; /*8*/
+  }
+  #heading2 {
+    font-size: 4.2rem; /*6*/
+    left: 5%;
+  }
+  .ff:after{
+    left: 10%;
+    top: -20%;
+  }
+
+  h3 span{
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .by-line {
+    font-size: 1rem;
+  }
+
+  #heading1 {
+    font-size: 4.8rem;
+  }
+  #heading2 {
+    font-size: 3rem;
+    left:1%;
+  }
+
+  .ff:after{
+    left: -1%;
+    top: -40%;
+    }
+
+    h3 span{
+      display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .by-line {
+    font-size: 1rem; /*1.5*/
+  }
+
+  #heading1 {
+    font-size: 3.5rem; /*8*/
+    margin-right: 1%;
+  }
+  #heading2 {
+    font-size: 3rem; /*6*/
+    left:1%;
+  }
+
+  .ff:after{
+    left: -5%;
+    top: -60%;
+    }
+}
