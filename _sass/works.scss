@@ -1,0 +1,103 @@
+.works-background {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(img/nudejoin.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -30;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.works-background h1{
+  width:100%;
+  padding: 50px;
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 4.5px white;
+}
+
+.works-background .heading{
+  font-size: 5rem;
+  z-index: 2;
+  text-align: left;
+  margin-left: 150px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.works-background .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.works-background .column {
+
+  margin: 0;
+  width: 100%;
+  padding: 0px;
+  flex: 1;
+}
+
+.works-background .frame {
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 3%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+.logo-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.logo:after {
+  position: absolute;
+  display: inline-block;
+  content: url(../svg/amazon.svg);
+  width: 15%;
+  height: auto;
+  padding: 5px;
+  bottom: 150px;
+  right: 0px;
+  z-index: 2;
+  border-radius: 5%;
+  background: linear-gradient(
+    to right,
+    rgba(250, 207, 17, 0.5),
+    rgba(250, 207, 17, 0.8)
+  );
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.zoom:hover {
+  transform: scale(0.75);
+}
+
+.frame img {
+  transform: scale(0.7);
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 1200px;
+    }
+}

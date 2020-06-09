@@ -1,0 +1,33 @@
+.left-col-credits{
+  width: 45%;
+  height: 100%;
+  float: left;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(9, 189, 135);
+  font-family: sans-serif;
+}
+
+.right-col-credits{
+  width: 55%;
+  float: right;
+  height: 100%;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-col-credits h3{
+  text-align: end;
+  font-style: italic;
+  margin-top: 100px;
+  margin-right: 5px;
+}
+
+.right-col-credits h3{
+  text-align: initial;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 110px;
+  margin-left: 5px;
+}

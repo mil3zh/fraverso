@@ -1,20 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
-/*----------------------------
-Body
-----------------------------*/
-
-
-.body-background {
+.index-background {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: left center;
   align-items: center;
   text-align: left;
-  background-image: url("img/nebula.jpg");
+  background-image: url(img/nebula.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -22,7 +13,7 @@ Body
   overflow-x: hidden;
 }
 
-.headings {
+.index-headings {
   position: relative;
   top:-5%;
   left: 10%;
@@ -40,11 +31,11 @@ Body
   z-index: 50;
 }
 
-h3 span{
+.index-background h3 span{
   display: inline;
 }
 
-#heading1 {
+#index-heading1 {
   margin-left: 1%;
   -webkit-text-stroke: 3px white;
   color: white;
@@ -56,7 +47,7 @@ h3 span{
   text-decoration: none;
   text-align: left;
 }
-#heading2 {
+#index-heading2 {
   font-size: 6rem;
   margin-top: -1%;
   margin-bottom: 0;
@@ -68,7 +59,7 @@ h3 span{
   text-shadow: 3px 3px 4px #1ac762;
 }
 
-.ff:after{
+.index-background .ff:after{
   content: url(img/alien.png);
   position: absolute;
   transform: scale(0.088) rotate(15deg);
@@ -86,7 +77,7 @@ h3 span{
   100% { transform: scale(0.088) rotate(15deg); }
 }
 
-.ff:hover:after{
+.index-background .ff:hover:after{
   transform: scale(0.089) rotate(15deg);
   animation: none;
 }
@@ -114,7 +105,7 @@ h3 span{
 
 @media screen and (max-width: 800px) {
 
-  .headings{
+  .index-background .headings{
     top: -30%;
   }
 
@@ -129,12 +120,12 @@ h3 span{
     font-size: 4.2rem; /*6*/
     left: 5%;
   }
-  .ff:after{
+  .index-background .ff:after{
     left: 10%;
     top: -20%;
   }
 
-  h3 span{
+  .index-background h3 span{
     display: block;
   }
 }
@@ -154,12 +145,12 @@ h3 span{
     left:1%;
   }
 
-  .ff:after{
+  .index-background .ff:after{
     left: -1%;
     top: -40%;
     }
 
-    h3 span{
+    .index-background h3 span{
       display: block;
     }
 }

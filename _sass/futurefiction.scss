@@ -1,0 +1,111 @@
+.ffdescription h1{
+  width:100%;
+  padding: 50px;
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 4.5px white;
+}
+
+.heading{
+  font-size: 5rem;
+  z-index: 2;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.tl-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.left-col{
+  display: flex;
+  flex: 1;
+}
+
+.mid-col{
+  flex: 3;
+  background-color: rgba(51,51,51,0.7);
+  padding: 50px;
+  margin-top: -400px;
+  margin-bottom: -20px;
+}
+
+.right-col{
+  display: flex;
+  flex: 1;
+}
+
+.ffdescription {
+  margin-top: 40%;
+  padding: 50px;
+  text-align: justify;
+}
+.ffdescription h4 {
+  text-align: start;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  -webkit-text-stroke: 1.5px white;
+}
+
+.ffdescription p {
+  text-align: justify;
+  color: white;
+}
+
+.toTheWebsite {
+  position: relative;
+  right: 20px;
+}
+
+.toTheWebsite h3 {
+  position: relative;
+  width:100%;
+  text-align: end;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 800;
+}
+
+.ff:after{
+  content:"";
+  background: url(img/alien.png) no-repeat;
+  position: absolute;
+  background-size: 25px;
+  transform: rotate(10deg);
+  padding: 20px;
+  right: -40px;
+  top: 10px;
+}
+
+.ff:hover:after{
+  transform: rotate(25deg) scale(1.2);
+}
+/*----------------------------
+Icon
+----------------------------*/
+
+.icon {
+  z-index: 90;
+  transform: rotate(0);
+  width: 3.5%;
+  height: 1auto;
+  transition: transform .4s;
+}
+
+.rotate {
+  -webkit-transform: rotate(40deg);
+  -webkit-transition: -webkit-transform 1s;
+}
+
+.icon:hover {
+  transform: scale(1.5, 1.5);
+}

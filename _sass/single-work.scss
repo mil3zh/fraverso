@@ -1,0 +1,131 @@
+.single-background{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-image: url(img/nudejoin.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+
+.single-background h1{
+  width:100%;
+  padding: 50px;
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 4.5px white;
+}
+
+.single-background .heading{
+  font-size: 5rem;
+  z-index: 2;
+  text-align: left;
+  margin-left: 150px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.single-background .left{
+  flex: 0.8;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  margin-top: -10%;
+}
+
+.single-background .right{
+  flex: 1;
+  display: flex;
+  background-color: rgba(51, 51, 51, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  margin-top: -20%;
+  margin-bottom: -50px;
+}
+
+.single-background .frame {
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 3%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+.single-background .logo-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.single-background .logo:after {
+  position: absolute;
+  display: inline-block;
+  content: url(../svg/amazon.svg);
+  width: 10%;
+  height: auto;
+  padding: 5px;
+  bottom: 300px;
+  right: 100px;
+  z-index: 2;
+  border-radius: 5%;
+  background: linear-gradient(
+    to right,
+    rgba(250, 207, 17, 0.5),
+    rgba(250, 207, 17, 0.8)
+  );
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.single-background img {
+  transform: scale(0.55);
+}
+
+.single-background .summary {
+  margin-top: -20%;
+  position: inherit;
+}
+
+.single-background .right h2{
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+  color: #c9c9c9;
+}
+
+.single-background .synopsis {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+  color: #c9c9c9;
+}
+
+@media only screen and (min-width: 768px){
+	.single-background .row{
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+
+	}
+
+	.single-background .column{
+    height: 450px;
+    width: 350px;
+	}
+}
