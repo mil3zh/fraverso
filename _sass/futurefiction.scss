@@ -1,51 +1,36 @@
-.ffdescription h1{
-  width:100%;
-  padding: 50px;
-  text-decoration: none;
-  color: white;
-  -webkit-text-stroke: 4.5px white;
-}
-
-.heading{
-  font-size: 5rem;
-  z-index: 2;
-  text-align: left;
-  margin-left: 150px;
-}
-
-.tl-container {
+.ff-background {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  background-image: url(svg/city2.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -30;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.left-col{
-  display: flex;
-  flex: 1;
-}
-
-.mid-col{
+.ff-timeline {
   flex: 3;
   background-color: rgba(51,51,51,0.7);
-  padding: 50px;
-  margin-top: -400px;
-  margin-bottom: -20px;
+  padding: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+
 }
 
-.right-col{
-  display: flex;
-  flex: 1;
-}
 
-.ffdescription {
+.ff-description {
   margin-top: 40%;
   padding: 50px;
   text-align: justify;
 }
-.ffdescription h4 {
+.ff-description h4 {
   text-align: start;
   text-decoration: none;
   color: white;
@@ -54,7 +39,7 @@
   -webkit-text-stroke: 1.5px white;
 }
 
-.ffdescription p {
+.ff-description p {
   text-align: justify;
   color: white;
 }
@@ -89,9 +74,7 @@
 .ff:hover:after{
   transform: rotate(25deg) scale(1.2);
 }
-/*----------------------------
-Icon
-----------------------------*/
+
 
 .icon {
   z-index: 90;
