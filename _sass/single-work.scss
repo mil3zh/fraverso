@@ -3,7 +3,6 @@
   height: 100%;
   padding-bottom: 50px;
   display: flex;
-  flex-wrap: wrap;
   text-align: center;
   background-image: url(img/nudejoin.jpg);
   background-size: cover;
@@ -17,15 +16,12 @@
 
 }
 
-.single-background h1{
+.single-background .heading{
   width:100%;
   padding: 50px;
   text-decoration: none;
   color: white;
   -webkit-text-stroke: 4.5px white;
-}
-
-.single-background .heading{
   font-size: 5rem;
   z-index: 2;
   text-align: left;
@@ -35,7 +31,8 @@
 }
 
 .single-background .left{
-  flex: 0.8;
+  width:40%;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
@@ -43,7 +40,8 @@
 }
 
 .single-background .right{
-  flex: 1;
+  height: 100%;
+  width:60%;
   display: flex;
   background-color: rgba(51, 51, 51, 0.7);
   flex-direction: column;
@@ -72,7 +70,7 @@
 .single-background .logo:after {
   position: absolute;
   display: inline-block;
-  content: url(../svg/amazon.svg);
+  content: url(css/svg/amazon.svg);
   width: 10%;
   height: auto;
   padding: 5px;
