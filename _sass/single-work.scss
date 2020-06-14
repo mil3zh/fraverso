@@ -1,6 +1,6 @@
 .single-background{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding-bottom: 50px;
   display: flex;
   text-align: center;
@@ -15,7 +15,7 @@
 
 }
 
-.single-background .heading{
+.single-heading{
   width:100%;
   padding: 5%;
   text-decoration: none;
@@ -24,30 +24,27 @@
   font-size: 5rem;
   z-index: 2;
   text-align: left;
-  margin-left: 150px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
-.single-background .left{
-  width:40%;
-  height: 100%;
+.single-left{
+  width:55%;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
   margin-top: -10%;
 }
 
-.single-background .right{
-  height: 100%;
-  width:60%;
+.single-right{
+  height: 100vh;
+  width:45%;
   display: flex;
   background-color: rgba(51, 51, 51, 0.7);
   flex-direction: column;
   justify-content: center;
   z-index: 1;
-  margin-top: -20%;
-  margin-bottom: -50px;
 }
 
 .single-background .frame {
