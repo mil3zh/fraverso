@@ -79,16 +79,16 @@
   -o-background-size: cover;
 }
 
-.zoom:hover {
-  transform: scale(0.75);
-}
+
 
 .frame img {
   transform: scale(0.7);
 }
 
-@media only screen and (min-width: 768px) {
-
+@media only screen and (min-width: 550px) {
+  .zoom:hover {
+    transform: scale(0.75);
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -102,9 +102,5 @@
     width: 100%;
     padding: 0px;
     flex: 1 0 40%;
-  }
-
-  .zoom:hover {
-    display: none;
   }
 }
