@@ -104,37 +104,65 @@
   }
 
 
-@media screen and (max-width: 650px) {
-  .nav {
-    position: relative;
+@media screen and (max-width: 950px) {
+
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+        background-color: #333;
+      }
+
+      .last {
+        padding-right: 20px;
+      }
+
+      ul#navigation ul li a {
+        flex-direction: column;
+        background: none;
+        padding: 7px 14px;
+        color: white;
+        text-decoration: none;
+        border: 0 none;
+        width: 9rem;
+        float: inherit;
+      }
+
   }
 
-    .nav ul li {
-      width: 100%;
+  @media screen and (max-width: 650px) {
+    .nav {
+      position: relative;
     }
 
-    ul {
-      text-align: center;
-      width: 100%;
-    }
+      .nav ul li {
+        width: 100%;
+      }
 
-    .menu-item {
-      color: white;
-      padding: 0;
-      text-decoration: none;
-      background-color: #333;
-      width: 100%;
-    }
-    ul#navigation ul {
-      display: none;
-    }
+      ul {
+        text-align: center;
+        width: 100%;
+      }
 
-    ul#navigation ul li a {
-      width: 100%;
-      float: inherit;
-    }
+      .menu-item {
+        color: white;
+        padding: 0;
+        text-decoration: none;
+        background-color: #333;
+        width: 100%;
+      }
+      ul#navigation ul {
+        display: none;
+      }
 
-    a {
-      width: 100%;
+      ul#navigation ul li a {
+        width: 100%;
+        float: inherit;
+      }
+
+      a {
+        width: 100%;
+      }
     }
-  }
