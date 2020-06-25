@@ -10,7 +10,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 .index-headings {
@@ -105,19 +105,19 @@
 
 @media screen and (max-width: 800px) {
 
-  .index-background .headings{
-    top: -30%;
+  .index-background{
+    padding-top: 15%;
   }
 
   .by-line {
-    font-size: 1rem; /*1.5*/
+    font-size: 1rem;
   }
 
   #heading1 {
-    font-size: 6.2rem; /*8*/
+    font-size: 6.2rem;
   }
   #heading2 {
-    font-size: 4.2rem; /*6*/
+    font-size: 4.2rem;
     left: 5%;
   }
   .index-background .ff:after{
