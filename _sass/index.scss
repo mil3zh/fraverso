@@ -144,6 +144,10 @@
 
 
 @media screen and (max-width: 600px) {
+  .index-background{
+    padding-top: 0;
+    overflow-x: scroll;
+  }
 
   .by-line {
     font-size: 1rem;
@@ -168,21 +172,54 @@
 }
 
 @media screen and (max-width: 400px) {
+
+  .index-headings{
+    margin-top: -55%;
+  }
+
+  #index-heading1 {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: index-headings 6s linear infinite;
+    -webkit-animation: index-headings 6s linear infinite;
+    animation: index-headings 6s linear infinite;
+  }
+
+  #index-heading2 {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: index-headings 8s linear infinite;
+    -webkit-animation: index-headings 8s linear infinite;
+    animation: index-headings 10s linear infinite;
+  }
+
   .by-line {
     font-size: 1rem; /*1.5*/
   }
 
-  #heading1 {
-    font-size: 3.5rem; /*8*/
-    margin-right: 1%;
-  }
-  #heading2 {
-    font-size: 3rem; /*6*/
-    left:1%;
-  }
-
-  .ff:after{
-    left: -5%;
-    top: -60%;
+    @-moz-keyframes index-headings {
+      0% {-moz-transform: translateX(100%);}
+      100% {-moz-transform: translateX(-100%);}
     }
+
+    @-webkit-keyframes index-headings {
+      0% {-webkit-transform: translateX(100%);}
+      100% {-webkit-transform: translateX(-100%);}
+    }
+
+    @keyframes index-headings {
+      0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
+
 }
