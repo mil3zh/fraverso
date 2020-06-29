@@ -40,7 +40,6 @@
   -webkit-text-stroke: 3px white;
   color: white;
   text-shadow: 3px 3px 4px #1ac762;
-  font-size: 8rem;
   margin-top: 0;
   margin-bottom: 0;
   color: white;
@@ -48,7 +47,6 @@
   text-align: left;
 }
 #index-heading2 {
-  font-size: 6rem;
   margin-top: -1%;
   margin-bottom: 0;
   margin-left: 18%;
@@ -94,16 +92,27 @@
   animation: none;
 }
 
+@media screen and (min-width: 1101px) {
+
+  #index-heading1 {
+    font-size: 8rem; /*8*/
+  }
+  #index-heading2 {
+    font-size: 6rem; /*6*/
+  }
+
+}
+
 
 @media screen and (max-width: 1100px) {
   .by-line {
     font-size: 1.2rem; /*1.5*/
   }
 
-  #heading1 {
+  #index-heading1 {
     font-size: 7.2rem; /*8*/
   }
-  #heading2 {
+  #index-heading2 {
     font-size: 5.2rem; /*6*/
   }
 
@@ -125,10 +134,10 @@
     font-size: 1rem;
   }
 
-  #heading1 {
+  #index-heading1 {
     font-size: 6.2rem;
   }
-  #heading2 {
+  #index-heading2 {
     font-size: 4.2rem;
     left: 5%;
   }
@@ -177,23 +186,14 @@
     margin-top: -55%;
   }
 
-  #index-heading1 {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: index-headings 6s linear infinite;
-    -webkit-animation: index-headings 6s linear infinite;
-    animation: index-headings 6s linear infinite;
+  #heading1 {
+    font-size: 5em;
   }
 
-  #index-heading2 {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: index-headings 8s linear infinite;
-    -webkit-animation: index-headings 8s linear infinite;
-    animation: index-headings 10s linear infinite;
+  #heading2 {
+    font-size: 6em;
   }
+
 
   .by-line {
     font-size: 1rem; /*1.5*/
