@@ -200,27 +200,4 @@
     font-size: 1rem; /*1.5*/
   }
 
-    @-moz-keyframes index-headings {
-      0% {-moz-transform: translateX(100%);}
-      100% {-moz-transform: translateX(-100%);}
-    }
-
-    @-webkit-keyframes index-headings {
-      0% {-webkit-transform: translateX(100%);}
-      100% {-webkit-transform: translateX(-100%);}
-    }
-
-    @keyframes index-headings {
-      0% {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-      }
-      100% {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-      }
-    }
-
 }
