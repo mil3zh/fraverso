@@ -1,8 +1,9 @@
 .works-background {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0 10% 0 10%;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-image: url(img/nudejoin.jpg);
   background-size: cover;
@@ -20,16 +21,8 @@
   text-decoration: none;
   color: white;
   -webkit-text-stroke: 4.5px white;
-  font-size: 5rem;
   z-index: 2;
   text-align: left;
-}
-
-.works-row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .works-column {
@@ -41,7 +34,7 @@
 
 .works-background .frame {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 2%;
   border-radius: 3%;
   background: linear-gradient(
     to right,
@@ -59,11 +52,7 @@
   position: absolute;
   display: inline-block;
   content: url(../css/svg/amazon.svg);
-  width: 15%;
   height: auto;
-  padding: 5px;
-  bottom: 150px;
-  right: 0px;
   z-index: 2;
   border-radius: 5%;
   background: linear-gradient(
@@ -81,34 +70,112 @@
   transform: scale(0.7);
 }
 
-
-
-@media only screen and (min-width: 651px) {
-  .works-column:hover{
-    transform: scale(0.75);
+@media only screen and (min-width: 1801px) {
+  .works-column{
+    flex: 1 0 30%;
   }
 
   .works-background .heading{
-    margin: 10%;
-    padding: 5%;
+    margin: 8% 10% 0 0;
+    font-size: 7rem;
+  }
+
+  .logo:after {
+    width: 22%;
+    padding: 2%;
+    right: -10%;
+    bottom: 150px;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .works-row {
-    display: block;
-    flex-wrap: wrap;
-    max-width: 1200px;
+@media only screen and (max-width: 1800px) {
+  .works-column{
+    flex: 1 0 30%;
   }
+
+  .works-background .heading{
+    margin: 8% 10% 0 0;
+    font-size: 6rem;
+  }
+
+  .logo:after {
+    width: 20%;
+    padding: 2%;
+    right: -8%;
+    bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .works-column{
+    transform: scale(1.1);
+  }
+
+  .works-background .heading{
+    margin: 8% 10% 0 0;
+    font-size: 6rem;
+  }
+
+  .logo:after {
+    width: 20%;
+    padding: 2%;
+    right: 4%;
+    bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
   .works-column {
-    margin: 0;
-    width: 100%;
-    padding: 0px;
     flex: 1 0 40%;
   }
 
   .works-background .heading{
-    margin: 20% 0 20% 0;
-    padding: 3%;
+    margin: 8% 10% 0 0;
+    font-size: 5rem;
+  }
+
+  .logo:after {
+    width: 17%;
+    padding: 2%;
+    right: 8%;
+    bottom: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .works-column{
+    transform: scale(1.1);
+  }
+
+  .works-background .heading{
+    margin: 8% 10% 0 0;
+    font-size: 6rem;
+  }
+
+  .logo:after {
+    width: 20%;
+    padding: 2%;
+    right: -8%;
+    bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .works-background .heading{
+    margin: 15% 0 15% 0;
+    font-size: 5rem;
+  }
+
+  .works-column {
+    flex: 1 0 60%;
+  }
+
+  .logo:after {
+    width: 20%;
+    padding: 2%;
+    right: 5%;
+    bottom: 150px;
   }
 }
