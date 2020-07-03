@@ -66,7 +66,7 @@
   left: 20%;
   top: -2%;
   animation: 3s ease 0.5s infinite wave;
-  
+
   z-index: 100;
 }
 
@@ -96,25 +96,29 @@
 @media screen and (min-width: 1101px) {
 
   #index-heading1 {
-    font-size: 8rem; /*8*/
+    font-size: 8rem;
   }
   #index-heading2 {
-    font-size: 6rem; /*6*/
+    font-size: 6rem;
   }
 
 }
 
 
 @media screen and (max-width: 1100px) {
+  .index-background{
+    padding-top: 10%;
+  }
+
   .by-line {
-    font-size: 1.2rem; /*1.5*/
+    font-size: 1.2rem;
   }
 
   #index-heading1 {
-    font-size: 7.2rem; /*8*/
+    font-size: 7.2rem;
   }
   #index-heading2 {
-    font-size: 5.2rem; /*6*/
+    font-size: 5.2rem;
   }
 
   .ff:after{
@@ -164,7 +168,7 @@
   }
 
   #heading1 {
-    font-size: 4.8rem;
+    font-size: 4.3rem;
   }
   #heading2 {
     font-size: 3rem;
@@ -187,17 +191,40 @@
     margin-top: -55%;
   }
 
-  #heading1 {
-    font-size: 5em;
+  #index-heading1 {
+    font-size: 3.5em;
   }
 
-  #heading2 {
-    font-size: 6em;
+  #index-heading2 {
+    font-size: 3em;
   }
 
 
   .by-line {
-    font-size: 1rem; /*1.5*/
+    font-size: 1rem;
   }
+
+  /*  @-moz-keyframes index-headings {
+      0% {-moz-transform: translateX(100%);}
+      100% {-moz-transform: translateX(-100%);}
+    }
+
+    @-webkit-keyframes index-headings {
+      0% {-webkit-transform: translateX(100%);}
+      100% {-webkit-transform: translateX(-100%);}
+    }
+
+    @keyframes index-headings {
+      0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }*/
 
 }

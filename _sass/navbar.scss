@@ -132,9 +132,22 @@
 
   }
 
+  @media screen and (min-width: 651px) {
+  .lang-btn {
+    display: none;
+    }
+  }
+
   @media screen and (max-width: 650px) {
     .nav {
       position: relative;
+    }
+
+    .lang-btn {
+      color: white;
+      &:hover{
+        text-decoration: underline;
+      }
     }
 
       .nav ul li {
