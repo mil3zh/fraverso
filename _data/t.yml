@@ -1,0 +1,30 @@
+en:
+    home: "Home"
+    contacts: Contacts
+    credits: Credits
+    bio: Bio
+    works: Works
+    work1: I Camminatori I
+    work2: E-Doll
+    work3: Antidoti Umani
+    work4: Livido
+    work5: I Camminatori II
+    awards: Awards
+    futurefiction: Future Fiction
+    publishing: Publishing
+    workshop: Workshop
+zh:
+    home: "首页"
+    contacts: 联系方式
+    credits: 网站管理
+    bio: 关于我
+    works: 科幻作品
+    work1: 行走者-上
+    work2: 电娃娃
+    work3: 人体解毒剂
+    work4: 挫伤
+    work5: 行走者-下
+    awards: 文学奖品
+    futurefiction: 未来科幻
+    publishing: 出版社
+    workshop: 工作坊
