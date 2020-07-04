@@ -4,6 +4,7 @@
     z-index: 5;
   }
 
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -153,6 +154,9 @@
       position: relative;
     }
 
+      .eng {
+        padding-top: 5%;
+      }
     .lang-btn {
       color: white;
       border-right: solid 2px white;

@@ -63,3 +63,4 @@ relative_permalinks: false
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+languages: [en,zh]

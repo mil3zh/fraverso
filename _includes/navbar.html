@@ -1,38 +1,48 @@
 <nav class="nav">
+
   <ul id="navigation" class="clearfix">
     <li class="left-btn">
-      <a class="lang-btn active" href="#">English</a><a class="home-btn active" href="index.html">Home</a></li>
-    <li class="menu-item last"><a target="_blank" href="contacts.html">Contacts</a></li>
-    <li class="menu-item"><a target="_blank" href="publishing.html">Future Fiction</a>
+      {% if page.lang == "zh" %}
+      <a class="lang-btn active eng" href="{{ site.baseurl }}/">English</a>
+      <a class="home-btn active" href="index.html">{{ site.data.t[page.lang].home }}</a>
+      {% else %}
+      <a class="lang-btn active zh" href="{{ site.baseurl }}/zh/">中文</a>
+      <a class="home-btn active eng" href="index.html">{{ site.data.t[page.lang].home }}</a>
+      {% endif %}
+    </li>
+
+    <li class="menu-item last"><a href="contacts.html">{{ site.data.t[page.lang].contacts }}</a></li>
+    <li class="menu-item"><a href="publishing.html">{{ site.data.t[page.lang].futurefiction }}</a>
       <ul>
-        <li><a href="publishing.html">Publishing</a></li>
-        <li><a href="workshop.html">Workshop</a></li>
+        <li><a href="publishing.html">{{ site.data.t[page.lang].publishing }}</a></li>
+        <li><a href="workshop.html">{{ site.data.t[page.lang].workshop }}</a></li>
       </ul>
     </li>
     <!--<li class="menu-item"><a target="_blank" href="#">Media</a>
       <ul>
-        <li><a target="_blank" href="media/press.html">Press</a></li>
-        <li><a target="_blank" href="media/photos.html">Photos</a></li>
-        <li><a target="_blank" href="media/videos.html">Videos</a></li>
+        <li><a href="media/press.html">Press</a></li>
+        <li><a href="media/photos.html">Photos</a></li>
+        <li><a href="media/videos.html">Videos</a></li>
       </ul>
     </li>-->
-    <li class="menu-item"><a href="awards.html">Awards</a>
+    <li class="menu-item"><a href="awards.html">{{ site.data.t[page.lang].awards }}</a>
       <!--<ul>
-          <li><a target="_blank" href="awards-index.html">Timeline</a></li>
-          <li><a target="_blank" href="awards/awards-index.html">Urania Award</a></li>
-          <li><a target="_blank" href="awards/awards-index.html">Italy Prize</a></li>
-          <li><a target="_blank" href="awards/awards-index.html">EU SciFi Prize</a></li>
+          <li><a href="awards-index.html">Timeline</a></li>
+          <li><a href="awards/awards-index.html">Urania Award</a></li>
+          <li><a href="awards/awards-index.html">Italy Prize</a></li>
+          <li><a href="awards/awards-index.html">EU SciFi Prize</a></li>
         </ul>-->
     </li>
-    <li class="menu-item"><a href="works.html">Works</a>
+    <li class="menu-item"><a href="works.html">{{ site.data.t[page.lang].works }}</a>
       <ul>
-        <li><a href="work3.html">Antidoti Umani</a></li>
-        <li><a href="work2.html">E-Doll</a></li>
-        <li><a href="work4.html">Livido</a></li>
-        <!--<li><a target="_blank" href="_blank">Bloodbusters</a></li>-->
-        <li><a href="work1.html">I Camminatori I</a></li>
-        <li><a href="work5.html">I Camminatori II</a></li>
+        <li><a href="work3.html">{{ site.data.t[page.lang].work3 }}</a></li>
+        <li><a href="work2.html">{{ site.data.t[page.lang].work2 }}</a></li>
+        <li><a href="work4.html">{{ site.data.t[page.lang].work4 }}</a></li>
+        <!--<li><a href="_blank">Bloodbusters</a></li>-->
+        <li><a href="work1.html">{{ site.data.t[page.lang].work1 }}</a></li>
+        <li><a href="work5.html">{{ site.data.t[page.lang].work2 }}</a></li>
       </ul>
     </li>
   </ul>
+
 </nav>
