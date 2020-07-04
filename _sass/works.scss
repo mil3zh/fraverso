@@ -112,7 +112,7 @@
   }
 
   .works-background .heading{
-    margin: 8% 10% 0 0;
+    margin: 15% 10% 8% 0;
     font-size: 6rem;
   }
 
@@ -125,40 +125,36 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .works-background{
+    padding: 0 7% 0 7%;
+  }
+  .works-background .heading{
+    margin: 20% 10% 10% 0;
+  }
 
   .works-column {
     flex: 1 0 40%;
   }
 
-  .works-background .heading{
-    margin: 8% 10% 0 0;
-    font-size: 5rem;
-  }
-
   .logo:after {
     width: 17%;
     padding: 2%;
-    right: 8%;
+    right: 1%;
     bottom: 100px;
   }
 }
 
-
 @media only screen and (max-width: 750px) {
-  .works-column{
-    transform: scale(1.1);
-  }
 
   .works-background .heading{
-    margin: 8% 10% 0 0;
-    font-size: 6rem;
+    margin: 20% 10% 10% 0;
   }
 
   .logo:after {
     width: 20%;
     padding: 2%;
-    right: -8%;
-    bottom: 150px;
+    right: 8%;
+    bottom: 100px;
   }
 }
 
@@ -177,5 +173,19 @@
     padding: 2%;
     right: 5%;
     bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .works-background .heading{
+    margin: 20% 0 15% 0;
+    font-size: 3.8rem;
+  }
+
+  .logo:after {
+    width: 17%;
+    padding: 2%;
+    right: 12%;
+    bottom: 100px;
   }
 }
