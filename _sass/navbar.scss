@@ -103,6 +103,16 @@
     clear: both;
   }
 
+.left-btn {
+  float: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-btn {
+  text-align: left;
+}
+
 
 @media screen and (max-width: 950px) {
 
@@ -145,6 +155,8 @@
 
     .lang-btn {
       color: white;
+      border-right: solid 2px white;
+      text-align: right;
       &:hover{
         text-decoration: underline;
       }
