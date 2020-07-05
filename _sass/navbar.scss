@@ -154,9 +154,20 @@
       position: relative;
     }
 
-      .eng {
-        padding-top: 5%;
+      .eng-left {
+        align-items: flex-end;
+        display: flex;
+        align-content: center;
+        justify-content: left;
       }
+
+      .eng-right {
+        align-items: flex-end;
+        display: flex;
+        align-content: center;
+        justify-content: right;
+      }
+
     .lang-btn {
       color: white;
       border-right: solid 2px white;

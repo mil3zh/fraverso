@@ -3,11 +3,11 @@
   <ul id="navigation" class="clearfix">
     <li class="left-btn">
       {% if page.lang == "zh" %}
-      <a class="lang-btn active eng" href="{{ site.baseurl }}/">English</a>
+      <a class="lang-btn active eng-right" href="{{ site.baseurl }}/">English</a>
       <a class="home-btn active" href="index.html">{{ site.data.t[page.lang].home }}</a>
       {% else %}
       <a class="lang-btn active zh" href="{{ site.baseurl }}/zh/">中文</a>
-      <a class="home-btn active eng" href="index.html">{{ site.data.t[page.lang].home }}</a>
+      <a class="home-btn active eng-left" href="index.html">{{ site.data.t[page.lang].home }}</a>
       {% endif %}
     </li>
 
