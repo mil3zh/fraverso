@@ -30,6 +30,17 @@
   z-index: 50;
 }
 
+.by-line-zh {
+  width: fit-content;
+  margin-bottom: 0%;
+  margin-left: 2%;
+  color: #137e5a;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  white-space: nowrap;
+  z-index: 50;
+}
+
 .index-background h3 span{
   display: inline;
 }
@@ -113,6 +124,10 @@
     font-size: 1.2rem;
   }
 
+  .by-line-zh {
+    font-size: 2.5rem;
+  }
+
   #index-heading1 {
     font-size: 7.2rem;
   }
@@ -136,6 +151,10 @@
 
   .by-line {
     font-size: 1rem;
+  }
+
+  .by-line-zh {
+    font-size: 2rem;
   }
 
   #index-heading1 {
@@ -164,6 +183,10 @@
 
   .by-line {
     font-size: 1rem;
+  }
+
+  .by-line-zh {
+    font-size: 1.8rem;
   }
 
   #heading1 {
@@ -201,6 +224,10 @@
 
   .by-line {
     font-size: 1rem;
+  }
+
+  .by-line-zh {
+    font-size: 1.8rem;
   }
 
   /*  @-moz-keyframes index-headings {

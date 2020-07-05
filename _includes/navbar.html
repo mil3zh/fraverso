@@ -11,9 +11,9 @@
       {% endif %}
     </li>
     {% if page.lang == "zh" %}
-    <li class="menu-item"><a href="{{ site.baseurl }}/"><i class="fas fa-language"></i></a></li>
+    <li class="menu-item lang-btn-end"><a href="{{ site.baseurl }}/"><i class="fas fa-language fa-language-zh"></i></a></li>
     {% else %}
-    <li class="menu-item"><a href="{{ site.baseurl }}/zh/"><i class="fas fa-language"></i></a></li>
+    <li class="menu-item lang-btn-end"><a href="{{ site.baseurl }}/zh/"><i class="fas fa-language fa-language-en"></i></a></li>
     {% endif %}
     <li class="menu-item"><a href="contacts.html">{{ site.data.t[page.lang].contacts }}</a></li>
     <li class="menu-item"><a href="publishing.html">{{ site.data.t[page.lang].futurefiction }}</a>
