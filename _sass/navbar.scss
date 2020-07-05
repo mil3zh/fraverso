@@ -22,7 +22,7 @@
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     background-color: #333;
   }
@@ -141,6 +141,10 @@
         float: inherit;
       }
 
+      .lang-btn-end {
+        display: none;
+      }
+
   }
 
   @media screen and (min-width: 601px) {
@@ -152,6 +156,10 @@
   @media screen and (max-width: 600px) {
     .nav {
       position: relative;
+    }
+
+    .lang-btn-end {
+      display: none;
     }
 
       .eng-left {
