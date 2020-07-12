@@ -1,6 +1,6 @@
 .nav {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     z-index: 5;
   }
 
@@ -54,22 +54,12 @@
   }
 
   ul#navigation ul li {
-    width: 100%;
-    border: 0 none;
     border-bottom: 1px solid #c9c9c9;
     float: inherit;
   }
 
-  .last {
-    padding-right: 40px;
-  }
-
   ul#navigation ul li a {
-    flex-direction: column;
-    background: none;
     padding: 7px 14px;
-    color: white;
-    text-decoration: none;
     border: 0 none;
     width: 9rem;
     float: inherit;
@@ -114,6 +104,38 @@
   text-align: left;
 }
 
+.badge-container {
+  margin: 0.3% 1.5% 0% 0%;
+  float: right;
+  color: white;
+}
+
+.badge-wrapper {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.my-badge {
+  text-decoration: none;
+  max-height: 0.5rem;
+  border-radius: 5%;
+  font-size: 12px;
+  background: #1779ba;
+  color: #fefefe;
+  border-radius: 15%;
+  padding: 30%;
+  display: flex;
+  align-items: center;
+  &:hover {
+      background: rgba(23,121,186,0.8);
+    }
+}
+
+.last {
+  padding-right: 1%;
+}
+
 
 @media screen and (max-width: 950px) {
 
@@ -126,16 +148,8 @@
         background-color: #333;
       }
 
-      .last {
-        padding-right: 20px;
-      }
-
       ul#navigation ul li a {
-        flex-direction: column;
-        background: none;
         padding: 7px 14px;
-        color: white;
-        text-decoration: none;
         border: 0 none;
         width: 9rem;
         float: inherit;
@@ -145,16 +159,8 @@
   }
 
   @media screen and (min-width: 601px) {
-  .lang-btn {
+  .mobile-btn {
     display: none;
-    }
-
-    .fa-language-zh{
-      font: normal normal normal 23px/1 FontAwesome !important;
-    }
-
-    .fa-language-en{
-      transform: scale(1.5);
     }
   }
 
@@ -163,32 +169,18 @@
       position: relative;
     }
 
-    .lang-btn-end {
+    .desktop-btn {
       display: none;
     }
 
-      .eng-left {
-        align-items: flex-end;
-        display: flex;
-        align-content: center;
-        justify-content: left;
-      }
-
-      .eng-right {
-        align-items: flex-end;
-        display: flex;
-        align-content: center;
-        justify-content: right;
-      }
-
-    .lang-btn {
-      color: white;
-      border-right: solid 2px white;
-      text-align: right;
-      &:hover{
-        text-decoration: underline;
-      }
+    .mobile-btn {
+      padding: 1%;
     }
+
+    .badge-container {
+      margin: 0.5% 7% 0% 7%;
+    }
+
 
       .nav ul li {
         width: 100%;

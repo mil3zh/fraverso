@@ -1,5 +1,5 @@
 en:
-    home: "Home"
+    home: Home
     contacts: Contacts
     credits: Credits
     bio: Bio
@@ -7,14 +7,15 @@ en:
     work1: I Camminatori I
     work2: E-Doll
     work3: Antidoti Umani
-    work4: Livido
+    work4: Nexthuman
     work5: I Camminatori II
+    work6: Bloodbusters
     awards: Awards
     futurefiction: Future Fiction
     publishing: Publishing
     workshop: Workshop
 zh:
-    home: "首页"
+    home: 首页
     contacts: 联系方式
     credits: 网站管理
     bio: 关于我
@@ -24,7 +25,24 @@ zh:
     work3: 人体解毒剂
     work4: 挫伤
     work5: 行走者-下
+    work6: 吸血头
     awards: 文学奖品
     futurefiction: 未来科幻
     publishing: 出版社
     workshop: 工作坊
+it:
+    home: Home
+    contacts: Contatti
+    credits: Crediti
+    bio: Bio
+    works: Romanzi
+    work1: I Camminatori I
+    work2: E-Doll
+    work3: Antidoti Umani
+    work4: Livido
+    work5: I Camminatori II
+    work6: Bloodbusters
+    awards: Premi Letterari
+    futurefiction: Future Fiction
+    publishing: Edizioni
+    workshop: Workshop
