@@ -12,16 +12,16 @@
           </div>
         </div>
       {% elsif page.lang == "en" %}
-      <a class="home-btn active eng-left" href="index.html">{{ site.data.t[page.lang].home }}</a>
+      <a class="home-btn active" href="index.html">{{ site.data.t[page.lang].home }}</a>
       <div class="badge-container last mobile-btn">
         <div class="badge-wrapper">
-          <a href="{{ site.baseurl }}/" class="my-badge">EN</a>
+          <a href="{{ site.baseurl }}/it/" class="my-badge">IT</a>
         |
-          <a class="my-badge" href="{{ site.baseurl }}/it/">IT</a>
+          <a class="my-badge" href="{{ site.baseurl }}/zh/">中</a>
           </div>
         </div>
       {% elsif page.lang == "it" %}
-      <a class="home-btn active eng-left" href="index.html">{{ site.data.t[page.lang].home }}</a>
+      <a class="home-btn active" href="index.html">{{ site.data.t[page.lang].home }}</a>
       <div class="badge-container last mobile-btn">
         <div class="badge-wrapper">
           <a href="{{ site.baseurl }}/" class="my-badge">EN</a>
@@ -56,26 +56,26 @@
         </div>
       </div>
     {% endif %}
+    <div class="mobile-order">
+      <li class="menu-item"><a href="bio.html">{{ site.data.t[page.lang].bio }}</a></li>
+      <li class="menu-item dropdown"><a href="works.html">{{ site.data.t[page.lang].works }}</a>
+         <ul class="drop-menu">
+          <li><a href="work3.html" class="drop-item">{{ site.data.t[page.lang].work3 }}</a></li>
+          <li><a href="work2.html" class="drop-item">{{ site.data.t[page.lang].work2 }}</a></li>
+          <li><a href="work4.html" class="drop-item">{{ site.data.t[page.lang].work4 }}</a></li>
+          <li><a href="work1.html" class="drop-item">{{ site.data.t[page.lang].work1 }}</a></li>
+          <li><a href="work5.html" class="drop-item">{{ site.data.t[page.lang].work5 }}</a></li>
+          <li><a href="work6.html" class="drop-item">{{ site.data.t[page.lang].work6 }}</a></li>
+      </ul>
+      </li>
+      <li class="menu-item"><a href="awards.html">{{ site.data.t[page.lang].awards }}</a></li>
+      <li class="menu-item dropdown"><a href="publishing.html">{{ site.data.t[page.lang].futurefiction }}</a>
+        <ul class="drop-menu">
+          <li><a href="publishing.html">{{ site.data.t[page.lang].publishing }}</a></li>
+          <li><a href="workshop.html">{{ site.data.t[page.lang].workshop }}</a></li>
+        </ul>
+      </li>
     <li class="menu-item"><a href="contacts.html">{{ site.data.t[page.lang].contacts }}</a></li>
-    <li class="menu-item"><a href="publishing.html">{{ site.data.t[page.lang].futurefiction }}</a>
-      <ul>
-        <li><a href="publishing.html">{{ site.data.t[page.lang].publishing }}</a></li>
-        <li><a href="workshop.html">{{ site.data.t[page.lang].workshop }}</a></li>
-      </ul>
-    </li>
-    <li class="menu-item"><a href="awards.html">{{ site.data.t[page.lang].awards }}</a>
-    </li>
-    <li class="menu-item"><a href="works.html">{{ site.data.t[page.lang].works }}</a>
-      <ul>
-        <li><a href="work3.html">{{ site.data.t[page.lang].work3 }}</a></li>
-        <li><a href="work2.html">{{ site.data.t[page.lang].work2 }}</a></li>
-        <li><a href="work4.html">{{ site.data.t[page.lang].work4 }}</a></li>
-        <li><a href="work1.html">{{ site.data.t[page.lang].work1 }}</a></li>
-        <li><a href="work5.html">{{ site.data.t[page.lang].work5 }}</a></li>
-        <li><a href="work6.html">{{ site.data.t[page.lang].work6 }}</a></li>
-      </ul>
-    </li>
-    <li class="menu-item"><a href="bio.html">{{ site.data.t[page.lang].bio }}</a>
-  </ul>
-
+</div>
+</ul>
 </nav>

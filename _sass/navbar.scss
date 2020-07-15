@@ -4,7 +4,6 @@
     z-index: 5;
   }
 
-
   ul {
     list-style-type: none;
     margin: 0;
@@ -14,7 +13,7 @@
   }
 
   li,
-  ul#navigation ul li ul li {
+  .drop-menu li {
     float: right;
   }
 
@@ -35,13 +34,12 @@
     background-color: #f3be3b;
   }
 
-  ul#navigation li:hover > ul {
+  li:hover > ul {
     visibility: visible;
     opacity: 1;
   }
 
-  ul#navigation ul,
-  ul#navigation ul li ul {
+  .drop-menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -53,19 +51,19 @@
     box-shadow: 1px 1px 1px #333;
   }
 
-  ul#navigation ul li {
+  .drop-menu li {
     border-bottom: 1px solid #c9c9c9;
     float: inherit;
   }
 
-  ul#navigation ul li a {
+  .drop-menu li a {
     padding: 7px 14px;
     border: 0 none;
     width: 9rem;
     float: inherit;
   }
 
-  ul#navigation ul li a:hover {
+  .menu-item a:hover {
     background: #f3be3b;
   }
 
@@ -73,8 +71,9 @@
     position: relative;
     padding-right: 30px;
     margin-right: inherit;
+
   }
-  .menu-item ul {
+  .drop-menu {
     position: absolute;
     top: 50px;
     left: 1px;
@@ -148,7 +147,7 @@
         background-color: #333;
       }
 
-      ul#navigation ul li a {
+      .drop-menu li a {
         padding: 7px 14px;
         border: 0 none;
         width: 9rem;
@@ -162,6 +161,12 @@
   .mobile-btn {
     display: none;
     }
+
+  .mobile-order {
+    display: flex;
+    flex-direction: row;
+    float: right;
+  }
   }
 
   @media screen and (max-width: 600px) {
@@ -181,7 +186,6 @@
       margin: 0.5% 7% 0% 7%;
     }
 
-
       .nav ul li {
         width: 100%;
       }
@@ -198,13 +202,21 @@
         background-color: #333;
         width: 100%;
       }
-      ul#navigation ul {
-        display: none;
+
+      .dropdown:hover .drop-menu {
+        display: block;
       }
 
-      ul#navigation ul li a {
+      .drop-menu {
+        position: static;
         width: 100%;
-        float: inherit;
+        display: none;
+
+      }
+
+      .drop-menu li a {
+        width: 100%;
+        background-color: #ccc3c3;
       }
 
       a {
