@@ -162,10 +162,6 @@
   }
 
   @media screen and (min-width: 600px) {
-    .dropdown:hover .drop-menu {
-      display: block;
-    }
-
     .mobile-btn {
       display: none;
       }
@@ -188,6 +184,10 @@
 
     .mobile-btn {
       padding: 1%;
+    }
+
+    .dropdown:hover .drop-menu {
+      display: block;
     }
 
     .badge-container {
