@@ -1,14 +1,17 @@
-console.log("start0")
-
 if (window.matchMedia("(max-width: 600px)").matches) {
-  console.log("start1")
+
   let dropdown = document.getElementsByClassName("dropdown")
-  let dropmenu = document.getElementsByClassName("drop-menu")
-  console.log(document.getElementsByClassName("dropdown")[0].innerHTML)
+  let droplink = document.getElementsByClassName("drop-link")
+  console.log(droplink[0].getAttribute('href'))
 
     for (let i = 0;i<dropdown.length;i++){
       dropdown[i].addEventListener('touchstart', function(){
-        dropdown[i].classList.toggle('drop-block');
+        if(dropdown[i].classList.contains('drop-block')){
+          droplink[i].href = 'works.html'
+        } else {
+          droplink[i].href = '#'
+          dropdown[i].classList.add('drop-block');
+        }
       });
     };
 }
