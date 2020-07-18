@@ -29,9 +29,15 @@
 .bio-left{
   flex: 2;
   margin: 0px;
-  background-image: url(svg/biob.svg);
   background-size: cover;
   background-position: center;
+}
+
+.bio-left img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: flex;
 }
 
 .bio-right{
@@ -125,6 +131,27 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+@media only screen and(max-width: 1400px){
+
+  .bio-text {
+    text-align: justify;
+  }
+
+  .bio-heading {
+    font-size: 4rem;
+  }
+
+  .img-text {
+    position: absolute;
+    display: inline-block;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  .mySlides img{
+    width: 35%;
+  }
+}
 
 @media only screen and(max-width: 650px){
 
@@ -154,6 +181,7 @@
   }
 
   .img-text {
+    position: relative;
     margin:auto;
     padding-bottom: 1%;
   }

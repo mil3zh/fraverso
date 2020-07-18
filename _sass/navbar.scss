@@ -239,3 +239,12 @@
         max-height: 1.5rem;
       }
     }
+
+    @media only screen
+    and(max-width: 750px)
+    and (orientation : landscape){
+      li a {
+          font-size: 0.8rem;
+        }
+
+    }
