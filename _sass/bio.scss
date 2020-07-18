@@ -1,7 +1,6 @@
 .bio-heading{
   width:100%;
   padding: 5%;
-
   text-align: start;
   text-decoration: none;
   color: white;
@@ -28,7 +27,6 @@
 }
 
 .bio-left{
-
   flex: 2;
   margin: 0px;
   background-image: url(svg/biob.svg);
@@ -129,6 +127,19 @@
 }
 
 @media only screen and(max-width: 650px){
+
+  .bio-left img{
+    width: 100%;
+  }
+
+  .bio-text {
+    padding: 7%;
+    text-align: justify;
+  }
+
+  .bio-heading {
+    font-size: 4rem;
+  }
 
   .bio-row{
     flex-direction: column;
