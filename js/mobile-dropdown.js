@@ -7,9 +7,8 @@ if (window.matchMedia("(max-width: 600px)").matches) {
   console.log(document.getElementsByClassName("dropdown")[0].innerHTML)
 
     for (let i = 0;i<dropdown.length;i++){
-      dropdown[i].addEventListener('click', function(){
+      dropdown[i].addEventListener('touchstart', function(){
         dropdown[i].classList.toggle('drop-block');
-        dropmenu[i].classList.toggle('drop-block');
       });
     };
 }

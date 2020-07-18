@@ -138,6 +138,10 @@
 
 @media screen and (max-width: 950px) {
 
+
+  }
+
+  @media screen and (min-width: 601px) {
     li a {
         display: inline-block;
         color: white;
@@ -153,12 +157,6 @@
         width: 9rem;
         float: inherit;
       }
-
-
-  }
-
-  @media screen and (min-width: 601px) {
-
   }
 
   @media screen and (min-width: 600px) {
@@ -191,10 +189,9 @@
     }
 
     .drop-block .drop-menu {
+      position: static;
       display: block;
-    }
-    .drop-block li{
-      display: block;
+      z-index: -3;
     }
 
     .badge-container {
@@ -222,6 +219,11 @@
         position: static;
         width: 100%;
         display: none;
+      }
+
+      .drop-block > ul {
+        visibility: visible;
+        opacity: 1;
       }
 
       .drop-menu li a {
