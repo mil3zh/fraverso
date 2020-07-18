@@ -30,6 +30,7 @@
   padding: 0 5% 5% 5%;
   margin-left: 20%;
   margin-right: 20%;
+  flex: 0 1 80%;
 }
 
 .timeline p {
@@ -98,6 +99,12 @@
     margin: 20% 0 20% 0;
     padding: 3%;
     }
+}
+
+@media screen and (max-width: 650px) {
+  .awards-background .en-font {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (max-width: 300px) {

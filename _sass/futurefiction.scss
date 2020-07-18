@@ -17,8 +17,9 @@
 .ff-timeline {
   background-color: rgba(51,51,51,0.7);
   padding: 0 5% 25% 5%;
-  margin-left: 20%;
-  margin-right: 20%;
+  //margin-left: 20%;
+  //margin-right: 20%;
+  flex: 0 1 80%;
 }
 
 
@@ -94,13 +95,15 @@
 
 .rotate {
   -webkit-transform: rotate(40deg);
-  -webkit-transition: -webkit-transform 1s;
+  -webkit-transition: -webkit  margin-left: 20%;
+  margin-right: 20%;-transform 1s;
 }
 
 .icon:hover {
   transform: scale(1.5, 1.5);
 }
 
+/*
 @media screen and (min-width: 751px) {
   .ff-background .heading{
     margin: 15% 0 15% 0;
@@ -112,5 +115,20 @@
   .ff-background .heading{
     margin: 30% 0 20% 0;
     padding: 3%;
+    }
+}
+*/
+
+@media screen and (max-width: 650px) {
+  .ff-timeline .en-font, .it-font2{
+    font-size: 3.5rem !important;
+    }
+
+  .ff-timeline .it-font{
+      font-size: 4rem !important;
+    }
+
+  .ff-timeline .zh-font{
+      font-size: 3.5rem !important;
     }
 }
