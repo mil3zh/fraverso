@@ -125,6 +125,7 @@
   border-radius: 15%;
   padding: 30%;
   display: flex;
+  text-align: start;
   align-items: center;
   &:hover {
       background: rgba(23,121,186,0.8);
@@ -191,7 +192,6 @@
     .drop-block .drop-menu {
       position: static;
       display: block;
-      z-index: -3;
     }
 
     .badge-container {
@@ -233,5 +233,9 @@
 
       a {
         width: 100%;
+      }
+
+      .my-badge {
+        max-height: 1.5rem;
       }
     }

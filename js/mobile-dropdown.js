@@ -5,7 +5,8 @@ if (window.matchMedia("(max-width: 600px)").matches) {
   console.log(droplink[0].getAttribute('href'))
 
     for (let i = 0;i<dropdown.length;i++){
-      dropdown[i].addEventListener('touchstart', function(){
+      dropdown[i].addEventListener('click', function(){
+         dropdown[i].classList.add('active')
         if(dropdown[i].classList.contains('drop-block')){
           droplink[i].href = 'works.html'
         } else {
