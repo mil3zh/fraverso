@@ -142,7 +142,7 @@
 
   }
 
-  @media screen and (min-width: 601px) {
+  @media screen and (min-width: 701px) {
     li a {
         display: inline-block;
         color: white;
@@ -160,7 +160,7 @@
       }
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 700px) {
     .mobile-btn {
       display: none;
       }
@@ -176,7 +176,7 @@
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .nav {
       position: relative;
     }
@@ -247,4 +247,8 @@
           font-size: 0.8rem;
         }
 
-    }
+    .badge-container {
+      margin: 0.5% 3% 0% 7%;
+     }
+
+  }

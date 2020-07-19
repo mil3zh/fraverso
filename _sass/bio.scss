@@ -1,14 +1,11 @@
 .bio-heading{
   width:100%;
-  padding: 5%;
+  margin: 10% 0 5% 5%;
   text-align: start;
   text-decoration: none;
   color: white;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
   -webkit-text-stroke: 4.5px white;
   font-size: 5rem;
-  z-index: 2;
 }
 
 .bio-text{
@@ -41,7 +38,6 @@
 }
 
 .bio-right{
-
   flex: 4;
   background-color: rgba(9, 189, 135, 0.8);
   margin: 0px;

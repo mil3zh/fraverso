@@ -17,20 +17,18 @@
 .ff-timeline {
   background-color: rgba(51,51,51,0.7);
   padding: 0 5% 25% 5%;
-  /*margin-left: 20%;
-  margin-right: 20%;*/
   flex: 0 1 80%;
 }
 
 
 .ff-background .heading {
   display: flex;
-  flex-grow: 1;
+  flex-flow: wrap;
   text-decoration: none;
   color: white;
   -webkit-text-stroke: 4.5px white;
   font-size: 5rem;
-  z-index: 2;
+  margin: 15% 0 15% 0;
 }
 
 
@@ -104,7 +102,7 @@
   transform: scale(1.5, 1.5);
 }
 
- 
+
 /*
 @media screen and (min-width: 751px) {
   .ff-background .heading{
@@ -133,4 +131,8 @@
   .ff-timeline .zh-font{
       font-size: 3.5rem !important;
     }
+
+  .ff-background h1 span{
+    display: block;
+  }
 }
