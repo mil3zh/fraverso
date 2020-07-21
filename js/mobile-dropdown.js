@@ -9,6 +9,7 @@ if (window.matchMedia("(max-width: 600px)").matches) {
          dropdown[i].classList.add('active')
         if(dropdown[i].classList.contains('drop-block')){
           droplink[i].href = 'works.html'
+          dropdown[i].classList.remove('drop-block');
         } else {
           droplink[i].href = '#'
           dropdown[i].classList.add('drop-block');
