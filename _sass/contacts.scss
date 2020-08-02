@@ -19,8 +19,6 @@
   background-color: rgba(9, 189, 135,0.8);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: sans-serif;
-
 }
 
 .lower-part {
@@ -57,23 +55,23 @@
 /* Set a specific color for each brand */
 
 /* Facebook */
-.fa-facebook {
+.contact-links .fa-facebook {
   background: white;
   color: rgba(9, 189, 135,1);
 }
 
 /* Twitter */
-.fa-twitter {
+.contact-links .fa-twitter {
   background: white;
   color: rgba(9, 189, 135,1);
 }
 
-.fa-instagram {
+.contact-links .fa-instagram {
   background: white;
   color: rgba(9, 189, 135,1);
 }
 
-.fa-youtube {
+.contact-links .fa-youtube {
   background: white;
   color: rgba(9, 189, 135,1);
 }
