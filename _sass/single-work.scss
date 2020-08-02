@@ -71,12 +71,12 @@
 }
 
 .book-cover .logo:after {
-  position: absolute;
+  position: relative;
   display: inline-block;
   content: url(svg/amazon.svg);
   width: 10%;
   height: auto;
-  padding: 5px;
+  padding: 2%;
   bottom: 300px;
   right: 100px;
   z-index: 2;
@@ -92,7 +92,7 @@
   -o-background-size: cover;
 }
 
-@media only screen and(min-width: 1200px){
+/*@media only screen and(min-width: 1200px){
 
   .book-cover img {
     transform: scale(1.1);
@@ -111,17 +111,10 @@
     right: -55%;
     padding: 2%;
   }
-}
-
-@media only screen and(max-width: 1600px){
-    .book-cover .logo:after {
-    top: 20px;
-    right: -55%;
-    }
-}
+}*/
 
 @media only screen
-and(max-width: 1300px){
+and(min-width: 950px){
 
   .single-background{
     padding-bottom: 0;
@@ -151,7 +144,6 @@ and(max-width: 1300px){
 
   .extra-long-summary {
     padding: 10% 10% 5% 10%;
-    overflow:scroll;
   }
 
   .book-cover{
@@ -163,13 +155,9 @@ and(max-width: 1300px){
   }
 
   .book-cover .logo:after {
-    position: relative;
-    display: inline-block;
     width: 35%;
-    height: auto;
-    top: -100px;
+    top: -50px;
     right: -60%;
-    padding: 2%;
   }
 
 }
@@ -217,7 +205,8 @@ and(orientation: portrait){
   }
 }
 
-@media only screen and(max-width: 650px){
+@media only screen
+and(max-width: 650px){
   .single-background{
     flex-direction: column;
     height: 100%;
