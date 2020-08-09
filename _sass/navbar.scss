@@ -12,9 +12,9 @@
     float: inherit;
   }
 
-  li,
-  .drop-menu li {
+  .drop-item {
     float: right;
+    display: none;
   }
 
   li a {
@@ -34,9 +34,11 @@
     background-color: #f3be3b;
   }
 
-  li:hover > ul {
-    visibility: visible;
+  .dropdown:hover .drop-menu,
+  .dropdown:hover .drop-item {
+    display: block;
     opacity: 1;
+    visibility: visible;
   }
 
   .drop-menu {
