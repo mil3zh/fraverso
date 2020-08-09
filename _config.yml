@@ -41,6 +41,9 @@ include:
   - _pages
   - futurefiction
 
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X #insert my ID one day
+
 
 relative_permalinks: false
 
@@ -63,4 +66,3 @@ relative_permalinks: false
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-languages: [en,zh]
