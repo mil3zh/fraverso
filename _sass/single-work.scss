@@ -242,8 +242,9 @@ and(max-width: 650px){
 
   .book-cover .logo:after {
     top: -70px;
-    right: -70%;
-    border-radius: 5%;
+    right: -50%;
+    border-radius: 3%;
+    width: 30%;
   }
 }
 

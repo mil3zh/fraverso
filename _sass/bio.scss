@@ -1,6 +1,6 @@
 .bio-heading{
-  width:100%;
-  margin: 10% 0 5% 5%;
+  width:auto;
+  margin: 15% 0 5% 5%;
   text-align: start;
   text-decoration: none;
   color: white;
@@ -24,7 +24,7 @@
 }
 
 .bio-left{
-  flex: 2;
+  flex: 5;
   margin: 0px;
   background-size: cover;
   background-position: center;
@@ -38,7 +38,7 @@
 }
 
 .bio-right{
-  flex: 4;
+  flex: 7;
   background-color: rgba(9, 189, 135, 0.8);
   margin: 0px;
 }
