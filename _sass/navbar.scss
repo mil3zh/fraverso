@@ -70,11 +70,10 @@
   }
 
   .menu-item {
-    position: relative;
     padding-right: 30px;
     margin-right: inherit;
-
   }
+
   .drop-menu {
     position: absolute;
     top: 50px;
@@ -159,6 +158,10 @@
         border: 0 none;
         width: 9rem;
         float: inherit;
+      }
+
+      .menu-item{
+        position: relative;
       }
   }
 
