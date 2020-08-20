@@ -27,6 +27,7 @@ baseurl: /fraverso # the subpath of your site, e.g. /blog
 url: http://mil3zh.github.io/fraverso # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  mil3zh
+style: compress
 # Build settings
 kramdown:
   input: GFM
@@ -35,6 +36,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-compress-images
+  - jekyll-responsive-image
+  - jekyll-purgecss
+css_dir: "<css_dir>"
 port: 4000
 
 include:
