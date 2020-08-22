@@ -1,98 +1,98 @@
 .nav {
-    position: absolute;
-    width: 100vw;
-    z-index: 5;
-  }
+  position: absolute;
+  width: 100vw;
+  z-index: 5;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10;
-    background-color: #333;
-    float: inherit;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  background-color: #333;
+  float: inherit;
+}
 
-  .drop-item {
-    float: right;
-    display: none;
-  }
+.drop-item {
+  float: right;
+  display: none;
+}
 
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 12px 20px;
-    text-decoration: none;
-    background-color: #333;
-  }
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  background-color: #333;
+}
 
-  li a:hover {
-    background-color: #f3be3b;
-  }
+li a:hover {
+  background-color: #f3be3b;
+}
 
-  .active {
-    background-color: #f3be3b;
-  }
+.active {
+  background-color: #f3be3b;
+}
 
-  .dropdown:hover .drop-menu,
-  .dropdown:hover .drop-item {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
+.dropdown:hover .drop-menu,
+.dropdown:hover .drop-item {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
 
-  .drop-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    opacity: 0;
-    position: absolute;
-    width: 9rem;
-    background: #333;
-    box-shadow: 1px 1px 1px #333;
-  }
+.drop-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  width: 9rem;
+  background: #333;
+  box-shadow: 1px 1px 1px #333;
+}
 
-  .drop-menu li {
-    border-bottom: 1px solid #c9c9c9;
-    float: inherit;
-  }
+.drop-menu li {
+  border-bottom: 1px solid #c9c9c9;
+  float: inherit;
+}
 
-  .drop-menu li a {
-    padding: 7px 14px;
-    border: 0 none;
-    width: 9rem;
-    float: inherit;
-  }
+.drop-menu li a {
+  padding: 7px 14px;
+  border: 0 none;
+  width: 9rem;
+  float: inherit;
+}
 
-  .menu-item a:hover {
-    background: #f3be3b;
-  }
+.menu-item a:hover {
+  background: #f3be3b;
+}
 
-  .menu-item {
-    padding-right: 30px;
-    margin-right: inherit;
-  }
+.menu-item {
+  padding-right: 30px;
+  margin-right: inherit;
+}
 
-  .drop-menu {
-    position: absolute;
-    top: 50px;
-    left: 1px;
-    width: 140px;
-  }
+.drop-menu {
+  position: absolute;
+  top: 50px;
+  left: 1px;
+  width: 140px;
+}
 
-  .fl {
-    float: left;
-  }
-  .fr {
-    float: right;
-  }
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
 
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .left-btn {
   float: left;
@@ -129,8 +129,8 @@
   justify-content: center;
   align-items: center;
   &:hover {
-      background: rgba(23,121,186,0.8);
-    }
+    background: rgba(23,121,186,0.8);
+  }
 }
 
 .last {
@@ -138,122 +138,108 @@
 }
 
 
-@media screen and (max-width: 950px) {
-
-
+@media screen and (min-width: 600px) {
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    background-color: #333;
   }
 
-  @media screen and (min-width: 701px) {
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 14px;
-        text-decoration: none;
-        background-color: #333;
-      }
-
-      .drop-menu li a {
-        padding: 7px 14px;
-        border: 0 none;
-        width: 9rem;
-        float: inherit;
-      }
-
-      .menu-item{
-        position: relative;
-      }
+  .drop-menu li a {
+    padding: 7px 14px;
+    border: 0 none;
+    width: 9rem;
+    float: inherit;
   }
 
-  @media screen and (min-width: 700px) {
-    .mobile-btn {
-      display: none;
-      }
-
-    .mobile-order {
-      display: flex;
-      flex-direction: row;
-      float: right;
-    }
-
-    .dropdown:hover .drop-menu {
-      display: block;
-    }
+  .menu-item{
+    position: relative;
   }
 
-  @media screen and (max-width: 700px) {
-    .nav {
-      position: relative;
-    }
-
-    .desktop-btn {
-      display: none;
-    }
-
-    .mobile-btn {
-      padding: 1%;
-    }
-
-    .drop-block .drop-menu {
-      position: static;
-      display: block;
-    }
-
-    .badge-container {
-      margin: 0.5% 7% 0% 7%;
-    }
-
-      .nav ul li {
-        width: 100%;
-      }
-
-      ul {
-        text-align: center;
-        width: 100%;
-      }
-
-      .menu-item {
-        color: white;
-        padding: 0;
-        text-decoration: none;
-        background-color: #333;
-        width: 100%;
-      }
-
-      .drop-menu {
-        position: static;
-        width: 100%;
-        display: none;
-      }
-
-      .drop-block > ul {
-        visibility: visible;
-        opacity: 1;
-      }
-
-      .drop-menu li a {
-        width: 100%;
-        background-color: #ccc3c3;
-      }
-
-      a {
-        width: 100%;
-      }
-
-      .my-badge {
-        max-height: 1.5rem;
-      }
-    }
-
-    @media only screen
-    and(max-width: 750px)
-    and (orientation : landscape){
-      li a {
-          font-size: 0.8rem;
-        }
-
-    .badge-container {
-      margin: 0.5% 3% 0% 7%;
-     }
-
+  .mobile-btn {
+    display: none;
   }
+
+  .mobile-order {
+    display: flex;
+    flex-direction: row;
+    float: right;
+  }
+
+  .dropdown:hover .drop-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-item {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    position: relative;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    padding: 1%;
+  }
+
+  .drop-block .drop-menu {
+    position: static;
+    display: block;
+  }
+
+  .badge-container {
+    margin: 0.5% 7% 0% 7%;
+  }
+
+  .nav ul li {
+    width: 100%;
+  }
+
+  ul {
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-item {
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .drop-menu {
+    position: static;
+    width: 100%;
+    display: none;
+  }
+
+  .drop-block > ul {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .drop-menu li a {
+    width: 100%;
+    background-color: #ccc3c3;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  .my-badge {
+    max-height: 1.5rem;
+  }
+}

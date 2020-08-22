@@ -25,7 +25,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .single-right{
@@ -195,7 +194,8 @@ and(orientation: portrait){
 }
 
 @media only screen
-and(max-width: 650px){
+and(max-width: 650px)
+and(orientation: portrait){
   .single-background{
     flex-direction: column;
     height: 100%;
@@ -255,7 +255,9 @@ and(orientation: landscape){
   }
 
   .book-description{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    padding: 5%;
+    margin: 15% 5% 15% 5%;
   }
 
   .book-cover{
