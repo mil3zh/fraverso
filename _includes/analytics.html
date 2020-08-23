@@ -1,68 +1,56 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- Only include in production -->
-{% if site.google_analytics and jekyll.environment == 'production' %}
+{% if site.google_analytics and jekyll.environment == 'development' %}
 
 <!-- Add cookie consent css & js -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<!-- Add google analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176070923-1"></script>
 
 <script>
-// Reads the value of a cookie by name or returns empty string
-function getCookie(name) {
-  var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
-  return b ? b.pop() : '';
-}
-
-// Actually starting analytics up
-function addAnalytics() {
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-176070923-1');
-}
-
-// Waiting for the load event
-window.addEventListener("load", function () {
-  // Reading "cookieconsent_status" cookie
-  const cookieConsent = getCookie('cookieconsent_status');
-
-  // Start analytics if user consented or did not deny
-  if (cookieConsent === 'allow' || cookieConsent === '') {
-    addAnalytics();
-  }
-
-  // Initialise cookie consent banner
-
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#eb6c44",
-        "text": "#ffffff"
-      },
-      "button": {
-        "background": "transparent",
-        "text": "#f5d948",
-        "border": "#f5d948"
-      }
+var cookiesAccepted = window.localStorage.cookiesAccepted
+// Initialise cookie consent banner
+if (cookiesAccepted !== true) {
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eb6c44",
+      "text": "#ffffff"
     },
-    "type": "opt-out",
-    "content": {
-      "allow": "Approve",
-      "dismiss": "Approve",
-      "deny": "Reject"
-    },
-    // Reload the page on user choice to make sure cookie is set
-    onStatusChange: function (status, chosenBefore) {
-      location.reload();
+    "button": {
+      "background": "transparent",
+      "text": "#f5d948",
+      "border": "#f5d948"
     }
-  })
-});
+  },
+  "type": "opt-out",
+  "content": {
+    "deny": "No, thanks"
+  },
+  onInitialise: function(status) {
+    if(!this.hasConsented()) {
+      cookiesAccepted = false;
+      window['ga-disable-UA-176070923-1'] = true;
+      location.reload();
+      console.log('disable cookies');
+    } else {
+      cookiesAccepted = true;
+      {% include ga.js %}
+      location.reload();
+      console.log('enable cookies');
+    }
+  },
+  law: {
+    regionalLaw: false,
+  },
+  location: true
+  });
+};
+
+if (cookiesAccepted === true) {
+  document.getElementsByClassName("cc-revoke")[0].style.display = "none";
+}
+
+console.log(cookiesAccepted)
 </script>
 
 {% endif %}
