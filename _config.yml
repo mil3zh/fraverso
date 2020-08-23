@@ -39,7 +39,7 @@ plugins:
   - jekyll-compress-images
   - jekyll-responsive-image
   - jekyll-purgecss
-css_dir: "<css_dir>"
+css_dir: "./css"
 port: 4000
 
 include:
@@ -47,7 +47,7 @@ include:
   - futurefiction
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X #insert my ID one day
+google_analytics: UA-176070923-1 #insert my ID one day
 
 
 relative_permalinks: false
