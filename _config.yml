@@ -27,7 +27,7 @@ baseurl: /fraverso # the subpath of your site, e.g. /blog
 url: http://mil3zh.github.io/fraverso # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  mil3zh
-style: compress
+#style: compress
 # Build settings
 kramdown:
   input: GFM

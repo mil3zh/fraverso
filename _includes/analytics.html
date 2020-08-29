@@ -7,9 +7,11 @@
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 
 <script>
-var cookiesAccepted = window.localStorage.cookiesAccepted
-// Initialise cookie consent banner
-if (cookiesAccepted !== true) {
+ var cookiesAccepted = window.localStorage.cookiesAccepted
+
+ if (cookiesAccepted) {
+   document.getElementsByClassName("cc-revoke")[0].style.display = "none !important";
+ } else {
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
@@ -30,12 +32,12 @@ window.cookieconsent.initialise({
     if(!this.hasConsented()) {
       cookiesAccepted = false;
       window['ga-disable-UA-176070923-1'] = true;
-      location.reload();
+      // location.reload();
       console.log('disable cookies');
     } else {
       cookiesAccepted = true;
       {% include ga.js %}
-      location.reload();
+      // location.reload();
       console.log('enable cookies');
     }
   },
@@ -45,10 +47,6 @@ window.cookieconsent.initialise({
   location: true
   });
 };
-
-if (cookiesAccepted === true) {
-  document.getElementsByClassName("cc-revoke")[0].style.display = "none";
-}
 
 console.log(cookiesAccepted)
 </script>
