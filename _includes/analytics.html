@@ -7,7 +7,6 @@
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 
 <script>
-
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
@@ -20,23 +19,17 @@ window.cookieconsent.initialise({
       "border": "#f5d948"
     }
   },
-  onInitialise: function(status) {
+  "content": {
+    "href": "404.html"
+  },
+  onStatusChange: function(status) {
     if(!this.hasConsented()) {
       window['ga-disable-UA-176070923-1'] = true;
-      console.log('disable cookies');
     } else {
       {% include ga.js %}
-      console.log('enable cookies');
     }
-  },
-  law: {
-    regionalLaw: false,
-  },
-  location: true
-  });
-};
-
-console.log(cookieconsent)
+  }
+});
 </script>
 
 {% endif %}
