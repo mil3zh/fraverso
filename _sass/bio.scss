@@ -169,7 +169,10 @@
     }
 
   .mySlides img{
-    width: 400px;
+    width: auto;
+    vertical-align: top;
+    max-height: 300px;
+    object-fit: cover;
     margin-bottom: 1em;
   }
 
