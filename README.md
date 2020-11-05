@@ -1,3 +1,3 @@
 # Personal Website in Jekyll :alien:
 
-Here's the link to my temporary github page: https://mil3zh.github.io/fraverso/ 
+Here's the link to my temporary github page: https://youthful-stonebraker-cb7b22.netlify.app/ 
