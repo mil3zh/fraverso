@@ -14,6 +14,7 @@ en:
     futurefiction: Future Fiction
     publishing: Publishing
     workshop: Workshop
+    convention: FutureCon
 zh:
     home: 首页
     contacts: 联系方式
@@ -30,6 +31,7 @@ zh:
     futurefiction: 未来科幻
     publishing: 出版社
     workshop: 工作坊
+    convention: 未来展会
 it:
     home: Home
     contacts: Contatti
@@ -46,3 +48,4 @@ it:
     futurefiction: Future Fiction
     publishing: Edizioni
     workshop: Workshop
+    convention: FutureCon
