@@ -1,6 +1,6 @@
 .nav {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 5;
 }
 
@@ -120,7 +120,7 @@ li a:hover {
   text-decoration: none;
   max-height: 0.5rem;
   border-radius: 5%;
-  font-size: 12px;
+  font-size: 1rem;
   background: #1779ba;
   color: #fefefe;
   border-radius: 15%;
